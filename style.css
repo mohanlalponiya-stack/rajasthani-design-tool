@@ -1,37 +1,30 @@
-body{
+body {
+  text-align: center;
   font-family: sans-serif;
-  text-align:center;
-  background:#fff8e1;
-  margin:0;
-  padding:0;
+  background: #fdf4e7;
 }
 
-header{
-  background:#ff6f00;
-  color:white;
-  padding:15px;
+.editor img {
+  max-width: 90%;
+  border-radius: 12px;
 }
 
-canvas{
-  max-width:95%;
-  border:1px solid #000;
-  margin:10px auto;
+.controls {
+  display: grid;
+  gap: 5px;
+  padding: 10px;
 }
 
-.tools button{
-  padding:10px 15px;
-  margin:5px;
-  font-size:16px;
+.text {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  color: red;
+  font-size: 30px;
 }
 
-footer{
-  background:#333;
-  color:white;
-  padding:10px;
-}
-
-footer a{
-  color:#ffd54f;
-  text-decoration:none;
-  margin:0 5px;
+.ad-box {
+  background: #eee;
+  padding: 15px;
+  margin: 10px;
 }
