@@ -1,44 +1,37 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="hi">
 <head>
-  <title>Pro Photo Editor</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rajasthani AI Photo Editor</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h2>🔥 Pro Photo Editor</h2>
+<header>🔥 Rajasthani AI Editor</header>
 
-<!-- AdSense TOP -->
-<div class="ad-box">Ad Here</div>
+<section class="upload">
+  <input type="file" id="upload">
+</section>
 
-<input type="file" id="upload" accept="image/*">
+<section class="editor">
+  <canvas id="canvas"></canvas>
+</section>
 
-<div class="editor">
-  <img id="photo">
-</div>
+<section class="toolbar">
+  <button onclick="openTab('design')">डिज़ाइन</button>
+  <button onclick="openTab('elements')">एलिमेंट</button>
+  <button onclick="openTab('text')">टेक्स्ट</button>
+  <button onclick="openTab('effects')">इफेक्ट</button>
+  <button onclick="openTab('ai')">AI</button>
+</section>
 
-<div class="controls">
-  <label>Brightness</label>
-  <input type="range" min="50" max="150" value="100" oninput="applyFilter()">
+<section id="panel" class="panel">
+  कोई टूल चुनें
+</section>
 
-  <label>Contrast</label>
-  <input type="range" min="50" max="150" value="100" oninput="applyFilter()">
-
-  <label>Saturation</label>
-  <input type="range" min="0" max="200" value="100" oninput="applyFilter()">
-</div>
-
-<input type="text" id="text" placeholder="Text add karo">
-<button onclick="addText()">Add Text</button>
-
-<button onclick="bw()">B & W</button>
-<button onclick="reset()">Reset</button>
-<button onclick="download()">Download</button>
-
-<!-- AdSense BOTTOM -->
-<div class="ad-box">Ad Here</div>
-
-<canvas id="canvas" hidden></canvas>
+<button class="download">⬇️ Download</button>
 
 <script src="script.js"></script>
 </body>
